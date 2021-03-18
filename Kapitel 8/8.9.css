@@ -1,0 +1,14 @@
+#flexbox {
+    display: flex;
+    flex-direction: row;
+    background-color: lightblue;
+    border: 1px solid blue;
+    flex-wrap: wrap;
+}
+#flexbox > div {
+    border: 1px solid black;
+    background-color: lightgreen;
+    margin: 3px;
+    flex-grow: 1;  
+    text-align: center;
+}

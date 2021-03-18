@@ -1,0 +1,27 @@
+.grid-foralder {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: lightblue;
+    padding: 10px;
+    grid-row-gap: 10px;
+    grid-column-gap: 15px;
+}
+.grid-foralder div {
+    background-color: lightgreen;
+    border: 1px solid blue;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.r2c2 {
+    grid-column: 2 / span 2;
+}
+.r6c3 {
+    grid-column: 3 / span 2;
+}
+.r3c2 {
+    grid-area: 3 / 2 / span 2 / 2;
+}
+.r4c4 {
+    grid-area: 4 /4 / span 2 / 4;
+}

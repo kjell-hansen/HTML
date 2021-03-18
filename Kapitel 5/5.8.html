@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5.8 - Boka bord</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Boka bord</h1>
+        <form>
+            <label>Namn: </label>
+            <input type="text" name="namn" size="30" required minlength="5"><br>
+            <label>Datum: </label>
+            <input type="date" name="datum" required><br>
+            <label>Tid: </label>
+            <select name="tid" required>
+                <option>17:00</option>
+                <option>18:30</option>
+                <option>19:45</option>
+            </select><br>
+            <label>Ange antal per menyalternativ</label>
+            <ul>
+                <li>Köttbullar m mos: <input type="number" name="köttbullar" max="12" min="0"></li>
+                <li>Hamburgare m pommes: <input type="number" name="hamburgare" max="12" min="0"></li>
+                <li>Kycklingnuggets m ris: <input type="number" name="kycklingnuggets" max="12" min="0"></li>
+                <li>Caesarsallad: <input type="number" name="ceasarsallad" max="12" min="0"></li>
+            </ul>
+            <label>Ev allergier: </label><br>
+            <input type="text" name="allergier" size="50"><br>
+            <input type="submit" name="skicka" value="Sänd"> <input type="reset" name="reset" value="Återställ">
+        </form>
+    </body>
+</html>

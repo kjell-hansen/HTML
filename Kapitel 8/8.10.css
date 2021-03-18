@@ -1,0 +1,19 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+#flexbox {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    border: 1px solid blue;
+    flex-grow: 1;
+    justify-content: space-between;
+    height: 99%;
+}
+#flexbox > div {
+    border: 1px solid black;
+    background-color: lightgreen;
+    margin: 3px;
+}

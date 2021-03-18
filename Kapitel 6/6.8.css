@@ -1,0 +1,64 @@
+* {
+    background-color: lightyellow;
+}
+body {
+    max-width: 900px;
+}
+h1, h2, h3 {
+    font-family: Times New Roman;
+    text-decoration: underline;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h1 {
+    color: darkgray;
+    text-transform: capitalize;
+    font-size: 28px;
+}
+h2 {
+    color: gray;
+    text-decoration: underline double grey;
+    font-size: 22px;
+}
+h3 {
+    color: lightgray;
+    font-size: 16px;
+}
+h1+h2, h2+h3, h1+p, h2+p, h3+p {
+    margin-top: 0;
+}
+p {
+    font-family: Arial;
+    color: navy;
+    text-align: justify;
+    font-size: 11px;
+    text-indent: 0.5cm;
+    margin-left: 1cm;
+}
+ul, ol {
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+li {
+    font-family: comic sans MS;
+    font-size: 10px;
+}
+em {
+    font-style: italic;
+    font-weight: bold;
+}
+strong {
+    font-weight: 900;
+    font-variant: small-caps;
+}
+i {
+    font-style: italic;
+    font-weight: 200;
+}
+b {
+    color: pink;
+    font-weight: bold;
+}
+mark {
+    background-color: plum;
+}

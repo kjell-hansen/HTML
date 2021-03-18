@@ -1,0 +1,34 @@
+.grid-foralder {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: white;
+}
+.grid-barn {
+    text-align: right;
+}
+.grid-barn:nth-child(6n-1),.grid-barn:nth-child(6n) {
+    background-color: aqua;
+}
+.grid-barn:nth-child(6n+2), .grid-barn:nth-child(6n+3) {
+    background-color: lightcyan;
+}
+.rubrik {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px dotted white;
+    text-align: center;
+}
+.summa {
+    text-align: right;
+    border-top: 3px double yellow;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+.radrubrik {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}

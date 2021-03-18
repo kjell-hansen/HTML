@@ -1,0 +1,49 @@
+#ma {
+    color: purple;
+}
+#ti {
+    color: red;
+}
+#on {
+    color: yellow;
+}
+#to {
+    color: orange;
+}
+#fr {
+    color: green;
+}
+#lo {
+    color: blue;
+}
+#so {
+    color: pink;
+}
+#manader {
+    list-style: none;
+}
+.sommar {
+    color: blue;
+}
+.sommar:before {
+    content: "\01F334  "; 
+    color: green;
+}
+.var {
+    color: lightgreen;
+}
+.var:before {
+    content: "\01F338  "; 
+    color:pink;
+}
+.host {
+    color: orange;
+}
+.host:before {
+    content: "\01F341  "; 
+    color: brown;
+} 
+.vinter {
+    color: lightblue;
+}
+.vinter:before {content: "\2603  ";}

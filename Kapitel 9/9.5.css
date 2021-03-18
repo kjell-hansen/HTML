@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#content {
+    display: grid;
+    grid-template-areas:
+        'header header header'
+        'menu main right'
+        'footer footer footer';
+    grid-gap: 10px;
+    background-color: white;
+    padding: 10px;
+    height: 100%;
+    grid-template-rows: 100px 1fr 100px;
+    grid-template-columns: 10% 1fr 20%;
+}
+
+#content > * {
+    background-color: lightblue;
+    padding: 10px 0;
+    font-size: 16px;
+    border: 3px solid blue;
+}
+header { 
+    grid-area: header; 
+}
+nav {
+    grid-area: menu; 
+    overflow: auto;
+}
+nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin-left: 0;
+    padding-left: 5px;
+}
+nav ul li {
+    flex-grow: 1;
+}
+main {
+    grid-area: main; 
+    overflow: auto;
+}
+aside {
+    grid-area: right; 
+    overflow: auto;
+}
+footer {
+    grid-area: footer; 
+}
+@media screen and (min-width: 1500px) {
+    main {
+        columns: 2;
+        column-gap: 10px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #content {
+        grid-template-areas:
+            'header header'
+            'menu menu' 
+            'main right'
+            'footer footer';
+        grid-template-rows: 100px auto 1fr 100px;
+        grid-template-columns: 1fr 20%;
+    }
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+    nav ul li {
+        flex-grow: unset;
+        padding-right: 5px; 
+    }
+}
+@media screen and (max-width: 800px) {
+    #content {
+        grid-template-areas:
+            'header'
+            'menu' 
+            'main'
+            'right' 
+            'footer';
+        grid-template-rows: 100px auto 1fr auto 100px;
+        grid-template-columns: 1fr;
+    }
+}
+@media print and (orientation:portrait) {
+    #content {
+        grid-template-areas:
+            'right' 
+            'main'
+            'header'
+            'menu' 
+            'footer';
+        grid-template-rows: auto 1fr 0 0 0;
+        grid-template-columns: 1fr;
+    }
+    header, footer, nav {
+        display: none;
+    }
+}
+@media print and (orientation: landscape) {
+    #content {
+        grid-template-areas:
+            'header header'
+            'menu menu' 
+            'main right'
+            'footer footer';
+        grid-template-rows: 100px auto 1fr 100px;
+        grid-template-columns: 1fr 20%;
+    }
+    li {
+        display: inline-block;
+    }
+}

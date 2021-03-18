@@ -1,0 +1,47 @@
+h1, h2, h3 {
+    font-family: Times New Roman;
+    text-decoration: underline;
+}
+h1 {
+    color: darkgray;
+    text-transform: capitalize;
+    font-size: 28px;
+}
+h2 {
+    color: gray;
+    text-decoration: underline double grey;
+    font-size: 22px;
+}
+h3 {
+    color: lightgray;
+    font-size: 16px;
+}
+p {
+    font-family: Arial;
+    color: navy;
+    text-align: justify;
+    font-size: 11px;
+}
+li {
+    font-family: comic sans MS;
+    font-size: 10px;
+}
+em {
+    font-style: italic;
+    font-weight: bold;
+}
+strong {
+    font-weight: 900;
+    font-variant: small-caps;
+}
+i {
+    font-style: italic;
+    font-weight: 200;
+}
+b {
+    color: pink;
+    font-weight: bold;
+}
+mark {
+    background-color: plum;
+}

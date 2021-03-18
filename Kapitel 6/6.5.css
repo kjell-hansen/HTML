@@ -1,0 +1,23 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: top;
+}
+a {
+    text-decoration: underline wavy purple;
+    font-family: georgia;
+    color: purple;
+}
+td, th {
+    border: 1px solid black;
+    vertical-align: top;
+    color: darkgray;
+}
+td {
+    font-size: 12px;
+    font-family: Arial;
+}
+th {
+    font-size: 13px;
+    font-family: Times New Roman;
+}

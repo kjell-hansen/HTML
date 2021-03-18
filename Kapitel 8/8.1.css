@@ -1,0 +1,13 @@
+.grid-foralder {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: lightblue;
+    padding: 10px;
+}
+.grid-barn {
+    background-color: lightgreen;
+    border: 1px solid blue;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}

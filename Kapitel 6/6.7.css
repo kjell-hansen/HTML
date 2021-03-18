@@ -1,0 +1,47 @@
+table {
+    border: 1px solid blue;
+    border-top: none; 
+    border-collapse: collapse;
+}
+caption {
+    color: black;
+    font-family: Times New Roman;
+    font-size: 15px;
+    text-align: center;
+    background-color: lightblue;
+    border: 1px solid blue;
+    border-bottom: none;
+}
+th:nth-child(1){
+    text-align: left;
+    color: darkgray;
+    font-style: italic;
+    font-size: 10px;
+    font-family: Verdana;
+    background-color: lightgray;
+    border-right: 1px solid black;
+}
+thead tr {
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: Verdana;
+    border-bottom: double 3px green;
+}
+tbody tr {
+    text-align: center;
+    font-family: Comic Sans MS;
+    color: navy;
+    font-size: 10px;
+}
+#sondag {
+    background-color: pink;
+}
+/*
+Veckodagarna	Centrerad mörkblå text 10px Verdana
+Söndag	Rosa bakgrund
+Kolumnrubrikerna	Centrerad mörkgrå fetstil 10px Verdana, ljusgrå bakgrund
+Td/th-taggarna	Heldragna svarta linjer 1px runt alla celler
+
+*/
+

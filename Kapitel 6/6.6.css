@@ -1,0 +1,39 @@
+table{
+    border: 1px solid green;
+    border-collapse: collapse;
+    font-family: Verdana;
+    font-size: 10px;
+    background-color: lightblue;
+}
+thead {
+    border: 3px double red;
+}
+thead td {
+    text-align: center;
+}
+tbody {
+    text-align: right;
+}
+th {
+    text-align: left;
+    font-weight: bold;
+    font-family: Times New Roman;
+    font-size: 13px;
+    padding: 0 3px;
+}
+col:nth-child(1) {
+    background-color: lightgreen;
+}
+col:nth-child(2) {
+    background-color: beige;
+} 
+col:nth-child(3),col:nth-child(4) {
+    background-color: pink;
+}
+col:nth-child(5) {
+    background-color: yellow;
+}
+tfoot {
+    background-color: inherit;
+    border-top: double 3px navy;
+}

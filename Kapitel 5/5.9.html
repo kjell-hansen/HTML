@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5.9 - Ledighetsansökan</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Ansökan om ledighet</h1>
+        <form>
+            <label>Namn</label>
+            <input type="text" name="namn" size="30" required minlength="5" placeholder="Ditt namn"><br>
+            <label>Signum</label>
+            <input type="text" name="signum" required minlength="11" maxlength="11" placeholder="ddmmååAxxxx" pattern="[0-9]{6}[A|\-][0-9]{3}([0-9]|[A-T]){1}"><br>
+            <label>Från och med </label>
+            <input type="date" name="fran" required><br>
+            <label>Till </label>
+            <input type="date" name="till" required><br>
+            <label>Orsak till ledighet: </label>
+            <select name="orsak">
+                <option>tjänstledig med lön</option>
+                <option>tjänstledig utan lön</option>
+                <option>semester</option>
+                <option>kompledigt</option>
+                <option>sjukskrivning</option>
+                <option>föräldraledigt</option>
+            </select><br>
+            <input type="submit" name="skicka" value="Sänd"> <input type="reset" name="reset" value="Återställ">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+header, nav, main, aside, footer {
+    box-sizing: border-box;
+    background-color: lightblue;
+    border: 3px solid blue;
+}
+header{
+    height: 100px;
+}
+nav {
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 10%;
+}
+nav ul {
+    list-style: none;
+    padding:  0.5em;
+    margin: 0.5em auto;
+}
+main{
+    margin-top: 5px;
+    margin-right: 5px;
+    float: left;
+    width: calc(75% - 20px);
+    overflow: auto;
+    max-height: calc(100% - 220px);
+}
+aside{
+    float: left;
+    margin-top: 5px;
+    width: 15%;
+    max-height: calc(100% - 220px);
+    overflow: auto;
+}
+footer {
+    margin-top: 5px;
+    float: left;
+    clear: both;
+    height: 100px;
+    width: 100%;
+}

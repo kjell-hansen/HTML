@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5.10 - Online-försäljning</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Online-försäljning</h1>
+        <form enctype="multipart/form-data">
+            <label>Rubrik: </label>
+            <input type="text" name="vara" maxlength="50" required placeholder="Vad vill du sälja?"><br>
+            <label>Beskrivning: </label><br>
+            <textarea name="beskrivning" cols="50" rows="7" required placeholder="Beskriv det du vill sälja!"></textarea><br>
+            <label>Pris: </label>
+            <input type="number" name="pris" required  min="0" max="1000">€<br>
+            <label>Bild: </label>
+            <input type="file" accept="image/*"><br>
+            <label>Kategori: </label>
+            <select name="kategori" required>
+                <option>Bil</option>
+                <option>Båt</option>
+                <option>Cykel</option>
+                <option>Motordrivet</option>
+                <option>Trädgård</option>
+                <option>Hushåll</option>
+            </select><br>
+            <label>Epost till dig: </label>
+            <input type="email" size="35" required name="email"><br>
+            <label>Telefon</label>
+            <input type="tel" size="12" required name="telefon" pattern="[0-9+-\s]{7,16}" placeholder="Endast siffror och +-!"><br>
+            <label>Publiceringsdatum: </label>
+            <input type="date" required name="publiceringsdatum"><br>
+            <input type="submit" name="skicka" value="Sänd"> <input type="reset" name="reset" value="Återställ">
+        </form>
+    </body>
+</html>

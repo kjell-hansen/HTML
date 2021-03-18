@@ -1,0 +1,42 @@
+header, nav, main, aside, footer {
+    box-sizing: border-box;
+    position: absolute;
+    background-color: lightblue;
+    border: 3px solid blue;
+}
+header{
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    height: 100px;
+}
+nav {
+    top: 110px;
+    left: 5px;
+    width: 10%;
+}
+nav ul {
+    list-style: none;
+    padding:  0.5em;
+    margin: 0.5em auto;
+}
+main{
+    top: 110px;
+    left: calc(10% + 10px);
+    width: calc(75% - 20px);
+    bottom: 110px;
+    overflow: auto;
+}
+aside{
+    right: 5px;
+    top: 110px;
+    width: 15%;
+    max-height: calc(100% - 220px);
+    overflow: auto;
+}
+footer {
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    height: 100px;
+}

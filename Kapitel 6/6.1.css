@@ -1,0 +1,24 @@
+* {
+    font-family: verdana;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+h1 {
+    color: darkblue;
+    font-variant: small-caps;
+    font-size: 24px;
+}
+h2 {
+    color: green;
+    text-decoration: underline wavy red;
+    font-size: 20px;
+}
+h3 {
+    font-size: 16px;
+}
+p {
+    font-size: 11px;
+    color: lightblue;
+    text-align: justify;
+}

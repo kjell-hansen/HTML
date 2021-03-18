@@ -1,0 +1,27 @@
+.planet {
+    font-size: 13px;
+    color: gray;
+    font-style: italic;
+    list-style-type: decimal;
+}
+.moon {
+    font-size: 10px;
+    color: gold;
+    font-weight: bold;
+    list-style:none;    
+}
+.moon:before {
+    content: "\00263D   ";
+    color: gray;
+}
+.inner {
+    font-size: 12px;
+    color: navy;
+    list-style: lower-roman;
+}
+.outer {
+    font-size: 14px;
+    font-style: initial;
+    color: maroon;
+    list-style: upper-roman;
+}

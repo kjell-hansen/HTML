@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5.5 - Bloggformulär</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Bloggformulär</h1>
+        <form>
+            <label>Rubrik</label>
+            <input type="text" size="50" name="rubrik"><br>
+            <label>Kategori</label>
+            <select name="kategori">
+                <option value="frukost">Frukostar</option>
+                <option value="lunch">Luncher</option>
+                <option value="middag">Middagsförslag</option>
+                <option value="efterrätt">Efterrätter</option>
+                <option value="mellanmål">Goda mellanmål</option>
+            </select><br>
+            <label>Innehåll</label><br>
+            <textarea name="innehall" rows="7" cols="50"></textarea><br>
+            <input type="submit" name="skicka" value="Sänd"> <input type="reset" name="reset" value="Återställ">
+        </form>
+    </body>
+</html>

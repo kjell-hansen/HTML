@@ -1,0 +1,36 @@
+.grid {
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    border: 1px solid blue;
+}
+.gridHead {
+    grid-column: 1 / span 8;
+    text-align: center;
+    background-color: lightblue;
+    font-family: Times New Roman;
+    font-family: 15px;
+    padding: 2px;
+}
+.gridColHead {
+    border-bottom: 3px double green;
+    font-weight: bold;
+    font-size: 10px;
+    font-family: Verdana;
+}
+.gridContent {
+    text-align: center;
+    font-size: 10px;
+    font-family: Comic;
+    color: navy;
+}
+.veckonummer {
+    background-color: lightgray;
+    font-style: italic;
+    font-weight: bold;
+    text-align: left;
+    font-family: Verdana;
+    color: darkgray;
+}
+.sondag {
+    background-color: pink;
+}

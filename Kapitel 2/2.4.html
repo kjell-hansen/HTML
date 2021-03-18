@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>2.4 - Förformatterad text och kod</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Förformatterad text</h1>
+        <p>Förformatterad text är egentligen inte formatterad utan det handlar om att textens <em>white space</em> behålls i det skick som den är i källkoden. Oftast blir teckensnittet ett med fast bredd:</p>
+        <pre>Denna texten finns inom pre-taggar
+och behåller alltså   all    white space
+som 
+man 
+skriver in i     koden.
+        </pre>
+        <h1>Källkod</h1>
+        <p>Om man någon gång behöver skriva in källkod på en sida gör man det lämpligen inom code-taggar:</p>
+        <code>
+function showHint(str) {
+   if (str.length == 0) {
+     document.getElementById("txtHint").innerHTML = "";
+     return;
+   } else {
+     var xmlhttp = new XMLHttpRequest();
+     xmlhttp.onreadystatechange = function() {
+       if (this.readyState == 4 && this.status == 200) {
+         document.getElementById("txtHint").innerHTML = this.responseText;
+       }
+     };
+     xmlhttp.open("GET", "gethint.php?q=" + str, true);
+     xmlhttp.send();
+   }
+ }
+        </code>
+        <p>Där behålls inte white space och radbrytningar som i originaltexten men teckensnittet blir ett med fast bredd.<br>
+        Via css kan man emellertid få texten att behålla white space och radbrytningar.</p>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>5.11 - Registreringsformulär</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Registreringsformulär</h1>
+        <form>
+            <label>Namn: </label>
+            <input type="text" name="namn" required pattern="[\p{L}]" maxlength="30" size="30"><br>
+            <label>Födelsedag: </label>
+            <input type="date" name="fodelsedag" required max="2005-10-05" value="2000-01-01"><br>
+            <label>Användarnamn: </label>
+            <input type="text" name="user" required pattern="[\w\d]" minlength="5" maxlength="10" placeholder="Anv.namn" title="Engelska tecken och siffror är tillåtna"><br>
+            <label>Lösenord: </label>
+            <input type="password" name="losenord" required minlength="8" size="12" title="Minst 8 tecken"><br>
+            <label>Epost: </label>
+            <input type="email" required name="epost"><br>
+            <label>Telefon (för lösenordsåterställning): </label>
+            <input type="tel" required  pattern="[0-9+-\s]{7,15}" size="15"><br>
+            <input type="submit" name="skicka" value="Sänd"> <input type="reset" name="reset" value="Återställ">
+        </form>
+    </body>
+</html>
