@@ -20,6 +20,7 @@ p {
     font-family: Arial;
     color: navy;
     text-align: justify;
+    text-indent: 2em;
     font-size: 11px;
 }
 li {
