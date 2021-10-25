@@ -30,8 +30,8 @@ q::after {
 q.block {
     display: block;
     margin: auto;
-    padding-left: 5em;
-    padding-right: 5em;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 a {
     text-decoration: none;
@@ -116,10 +116,6 @@ nav a {
 nav a:visited, a:active, a:hover {
     color: blue;
 }
-nav a.current:before {
-    content: '=> ';
-    color: greenyellow;
-}
 nav a.current:hover {
     text-decoration: none;
     cursor: default;    
@@ -147,7 +143,10 @@ main p:first-child {
 main p::first-letter {
     font-size: 3em;
     vertical-align: top;
-    padding: 3px;
+    padding: 0;
+    margin: 0;
+    margin-top: -0.3em;
+    margin-block-start: -0.3em;
     float: left;
 }
 main p img {
@@ -215,6 +214,12 @@ footer  {
         column-rule: 1px solid grey;
     }
 }
+@media screen and (min-width: 900px) {
+    nav a.current:before {
+        content: '=> ';
+        color: greenyellow;
+    }
+}
 @media screen and (max-width: 900px) {
     #content {
         grid-template-areas:
@@ -226,61 +231,25 @@ footer  {
         grid-template-columns: 1fr 20%;
     }
     nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
+        display: block;
         justify-content: flex-start;
     }
     nav p, nav hr, #home {
         display: none;
     }
     nav ul li {
-        flex-grow: unset;
+        display: block;
         padding-right: 5px; 
     }
-}
-@media screen and (max-width: 600px)  {
-    #content {
-        grid-template-areas:
-            'header'
-            'menu' 
-            'main'
-            'right' 
-            'footer';
-        grid-template-rows: 20vw auto 3fr 1fr auto;
-        grid-template-columns: 100%;
+    nav ul li ul li{
+        display: inline-block;
+        padding-right: 5px; 
     }
-    header h1 {
-        font-size: min(15vw, 5em);
+    a.current:visited, a.current:active, a.current:visited {
+        color: greenyellow;
     }
-    header img {
-        margin-left: 2vw;
-        height: min(15vw, 100%);
-    }
-    aside img {
-        width: 25%;
-    }
-    nav {
-        columns: 2;
-    }
-    nav h3 {
-        padding-left: 2vw;
-        font-size: min(15vw,2em);
-    }
-    nav h3:hover+ul {
-        display: block;
-    }
-    nav ul:hover {
-        display: block;
-    }
-    nav ul {
-        position: absolute;
-        background-color: burlywood;
-        display: none;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    }
-    aside h2 {
-        font-size: 2em;
-    }
+
+
 }
 @media screen and (max-width: 800px) and (orientation:landscape) {
     #content {
@@ -304,7 +273,54 @@ footer  {
         width: 25%;
     }
     nav {
-        columns: 2;
+        display: flex;
+    }
+    nav h3 {
+        padding-left: 2vw;
+        font-size: min(15vw,2em);
+    }
+    nav h3:hover+ul {
+        display: block;
+    }
+    nav ul ul:hover {
+        display: block;
+    }
+    nav h3 ul {
+        position: absolute;
+        background-color: burlywood;
+        display: none;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    a.current:visited, a.current:active, a.current:visited {
+        color: greenyellow;
+    }
+    nav a.current:before {
+        content: initial;
+    }
+    aside h2 {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 600px) and (orientation:portrait)  {
+    #content {
+        grid-template-areas:
+            'header'
+            'menu' 
+            'main'
+            'right' 
+            'footer';
+        grid-template-rows: 20vw auto 3fr 1fr auto;
+        grid-template-columns: 100%;
+    }
+    header h1 {
+        font-size: min(15vw, 5em);
+    }
+    header img {
+        margin-left: 2vw;
+        height: min(15vw, 100%);
+    }
+    aside img {
+        width: 25%;
     }
     nav h3 {
         padding-left: 2vw;
@@ -316,12 +332,20 @@ footer  {
     nav ul:hover {
         display: block;
     }
-    nav ul {
+    nav ul li {
+        display: inline-block;
+        padding-right: 5px;
+    }
+    nav ul ul {
         position: absolute;
         background-color: burlywood;
         display: none;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
+    nav ul li ul li {
+        display: block;
+        padding-right: 5px;
+    }    
     aside h2 {
         font-size: 2em;
     }
